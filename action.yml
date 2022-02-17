@@ -1,0 +1,25 @@
+name: 'Test Paclet'
+description: 'Test a paclet using its definition notebook file'
+branding:
+  icon: 'check-square'  
+  color: 'orange'
+inputs:
+  target:  # id of input
+    description: 'The target'
+    required: false
+    default: 'Submit'
+  definition_notebook:
+    description: 'Path to the definition notebook'
+    required: false
+    default: './DefinitionNotebook.nb'
+  debug:
+    description: 'Whether to enable additional debug output'
+    required: false
+    default: 'false'
+  paclet_cicd_version:
+    description: 'Version of PacletCICD to use'
+    required: false
+    default: 'latest'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
