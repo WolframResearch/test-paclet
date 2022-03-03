@@ -11,7 +11,7 @@ inputs:
   definition_notebook:
     description: 'Path to the definition notebook'
     required: false
-    default: './DefinitionNotebook.nb'
+    default: './ResourceDefinition.nb'
   debug:
     description: 'Whether to enable additional debug output'
     required: false
