@@ -21,6 +21,6 @@ echo "::group::Installing dependencies..."
 wolfram_script "${SCRIPT_DIR}/install_dependencies.wls"
 echo "::endgroup::"
 
-echo "::group::Checking Paclet..."
+echo "::group::Testing Paclet..."
 wolfram_script "${SCRIPT_DIR}/test_paclet.wls"
 echo "::endgroup::"
